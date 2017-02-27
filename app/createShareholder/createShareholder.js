@@ -15,15 +15,12 @@ angular.module('myApp.createShareholder', ['ngRoute'])
   $scope.surname = "";
   $scope.id = "";
   $scope.account = "";
-
+    $scope.userHash = "";
 
   $scope.generateHash = function() {
-      var CryptoJS = require("crypto-js");
-      var stringToEncrypt = "3/^5b,GhSh}%(,b*" +$scope.name + $scope.surname + $scope.id + $scope.account;
-      var ciphertext = CryptoJS.SHA3.encrypt('my message', { outputLength: 224 });
-
-      console.log(ciphertext.toString());
-
+      var stringToEncrypt =  $scope.name + $scope.surname + "3/^5b,GhSh}%(,b*" +$scope.id + $scope.account;
+      var ciphertext = sha3_256(stringToEncrypt);
+      $scope.userHash = ciphertext;
   }
 
 

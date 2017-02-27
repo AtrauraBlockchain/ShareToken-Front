@@ -1,14 +1,19 @@
+<div class="row center-box">
 
+    <div id="card-alert" class="card green lighten-5" ng-if="userHash != ''">
+        <div class="card-content green-text">
+            <p>SUCCESS : The user has been created and the generated hash is:
+            {{userHash}}</p>
+        </div>
+    </div>
+
+
+</div>
 
 <div class="row center-box">
     <div class="col s12">
         <h2>CREATE SHAREHOLDER</h2>
     </div>
-    <div class="input-field col s6">
-        <input id="treatment" type="text" ng-model="treatment" class="validate">
-        <label for="treatment">Treatment</label>
-    </div>
-
     <div class="input-field col s6">
         <input  id="first_name" type="text" class="validate">
         <label for="first_name" ng-model="name">First Name</label>
@@ -39,6 +44,5 @@
     <button class="waves-effect waves-light btn btn-bseh gap" ng-click="generateHash()">CREATE NEW SHAREHOLDER</button>
     </div>
 </div>
-
 
 
