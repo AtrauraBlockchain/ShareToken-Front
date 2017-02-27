@@ -1,0 +1,46 @@
+header nav{
+    background-color: #4990E2;
+}
+
+nav a.button-collapse {
+    display: block !important;
+}
+
+h2{
+    font-size: 14px;
+}
+
+#slide-out{
+    background-color: #4990E2;
+}
+
+#slide-out li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#slide-out li.active{
+    background-color: #152B45;
+}
+
+.logo-small{
+    text-align: center;
+}
+
+.brand-logo{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.btn-bseh{
+    background-color: #F50057 !important;
+}
+
+.gap{
+    margin-top: 10px;
+}
+
+.big-font{
+    font-size: 42px;
+}

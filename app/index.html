@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!--  <ul class="menu">
+    <li><a href="#!/view1">view1</a></li>
+    <li><a href="#!/view2">view2</a></li>
+  </ul>-->
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<ul id="slide-out" class="side-nav">
+  <li><div class="userView">
+    <div class="background logo-small">
+      <span>SHARE<b>TOKENS</b></span>
+    </div>
+    <a href="#!user">MY STOCKS</a>
+    <a href="#!name">TRANSFER</a>
+  </div></li>
+  <li><p><i class="material-icons">cloud</i>ADdmin</p></li>
+  <li><a href="#!">SHAREHOLDERS</a></li>
+  <li><a href="#!">MANAGE STOCKS</a></li>
+</ul>
+<header>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo"><span>SHARE<b>TOKENS</b></span></a>
+    <ul id="nav-mobile" class="right">
+      <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<div ng-view></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+<script src="myTokens/myTokens.js"></script>
+<script src="transfer/transfer.js"></script>
+<script src="shareholders/shareholders.js"></script>
+<script src="manageTokens/manageTokens.js"></script>
+
+
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script>
+
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+
+</script>
+</body>
+</html>
+
