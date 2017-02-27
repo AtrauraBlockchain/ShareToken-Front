@@ -6,17 +6,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>SHARETOKENS</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<!--  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>-->
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -24,26 +21,26 @@
 
 
 <ul id="slide-out" class="side-nav">
-  <li><div class="userView">
+  <li class="hover-none"><div class="userView">
     <div class="background logo-small">
       <span>SHARE<b>TOKENS</b></span>
     </div>
-    <a href="#!user">MY STOCKS</a>
-    <a href="#!name">TRANSFER</a>
   </div></li>
-  <li><p><i class="material-icons">cloud</i>ADdmin</p></li>
-  <li><a href="#!">SHAREHOLDERS</a></li>
-  <li><a href="#!">MANAGE STOCKS</a></li>
+  <li><a  class="big-gap" href="/#/myTokens"><i class="material-icons">view_quilt</i>MY TOKENS</a></li>
+  <li><a href="/#/transfer"><i class="material-icons">swap_horiz</i>TRANSFER TOKENS</a></li>
+  <li class="big-gap"><span style="padding-left: 30px;">Admin</span></li>
+  <li><a href="/#/shareholders"><i class="material-icons">supervisor_account</i>MANAGE SHAREHOLDERS</a></li>
+  <li><a href="/#/manageTokens"><i class="material-icons">playlist_add</i>MANAGE TOKENS</a></li>
 </ul>
 <header>
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><span>SHARE<b>TOKENS</b></span></a>
-    <ul id="nav-mobile" class="right">
-      <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
-    </ul>
-  </div>
-</nav>
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left">
+        <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
+      </ul>
+      <a href="#" class="brand-logo"><span>SHARE<b>TOKENS</b></span></a>
+    </div>
+  </nav>
 </header>
 
 <div ng-view></div>
@@ -59,6 +56,8 @@
 <script src="myTokens/myTokens.js"></script>
 <script src="transfer/transfer.js"></script>
 <script src="shareholders/shareholders.js"></script>
+<script src="createShareholder/createShareholder.js"></script>
+
 <script src="manageTokens/manageTokens.js"></script>
 
 

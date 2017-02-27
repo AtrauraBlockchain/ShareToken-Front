@@ -6,11 +6,12 @@ angular.module('myApp', [
   'myApp.myTokens',
   'myApp.transfer',
   'myApp.manageTokens',
-  'myApp.shareholders'
+  'myApp.shareholders',
+  'myApp.createShareholder'
+
 
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/myTokens'});
 }]);
